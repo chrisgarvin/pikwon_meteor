@@ -4,6 +4,8 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  text-decoration: none;
+  color: $secondary_color;
 }
 
 html,body {
@@ -151,4 +153,49 @@ header a:hover {
 }
 .primary {
   color: $primary_color;
+}
+.profile {
+  text-align: left;
+  font-size: 15px;
+}
+.profile h2 {
+  font-size: 18px;
+}
+.profile input {
+  border-radius: 5px;
+  width: 28vw;
+  height: 4vw;
+  font-size: 1.8vw;
+  background: $primary_color;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  // -webkit-appearance: none;
+}
+.profile button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: bolder;
+  background: $secondary_color;
+  height: 4vw;
+  width: 28vw;
+  font-size: 1.8vw;
+  color: white;
+}
+.profile ::-webkit-input-placeholder {
+   color: white;
+}
+
+.profile :-moz-placeholder { /* Firefox 18- */
+   color: white;
+}
+
+.profile ::-moz-placeholder {  /* Firefox 19+ */
+   color: white;
+}
+
+.profile :-ms-input-placeholder {
+   color: white;
 }
