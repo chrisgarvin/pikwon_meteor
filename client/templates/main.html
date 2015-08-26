@@ -2,9 +2,11 @@
   <title>pikwon</title>
   <link href='https://fonts.googleapis.com/css?family=Raleway:700' rel='stylesheet' type='text/css'>
 </head>
-
-<body>
-  <header class="logout">
-    {{> loginButtons align='right'}}
-  </header>
-</body>
+<template name="main">
+  <body>
+    <header class="logout">
+      {{> navigation }}
+    </header>
+    {{> yield }}
+  </body>
+</template>

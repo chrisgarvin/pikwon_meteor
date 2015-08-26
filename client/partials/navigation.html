@@ -1,0 +1,27 @@
+<template name="navigation">
+
+  {{#if currentUser}}
+<ul>
+<li>
+  <a href="">{{ currentUser.name }}</a>
+  <span class="primary">|</span>
+</li>
+<li>
+  <a href="">NEW</a>
+  <span class="primary">|</span>
+</li>
+<li>
+  <a href="">LOG OUT</a>
+</li>
+</ul>
+  {{ else }}
+  <form>
+    <input type="text" name="username" placeholder="USERNAME" required>
+    <input type="password" name="password" placeholder="PASSWORD" required>
+    <button>LOG IN</button>
+    <a href="">SIGN-UP</a> <h3 class="primary" style="display:inline;">|</h3>
+    <a href="">FORGOT PASSWORD</a>
+  </form>
+  {{/if}}
+
+</template>
