@@ -4,7 +4,7 @@
 
 <div class="container profile">
 
-  <h1 class="header">WELL HELLO, {{currentUser.name}}!</h1>
+  <h1 class="header">WELL HELLO, {{currentUser.fname}}!</h1>
 
 </div>
 
@@ -14,12 +14,12 @@
 
   <h1 class="header">SIGN-UP</h1>
 
-  <form class="signup">
+  <form class="signup" autocomplete="off">
     <input type="text" name="fname" placeholder="FIRST NAME" required><br>
     <input type="text" name="lname" placeholder="LAST NAME" required><br>
-    <input type="email" name="email" placeholder="EMAIL" required><br>
+    <input type="email" name="newemail" placeholder="EMAIL" required><br>
     <input type="text" name="username" placeholder="USERNAME" required><br>
-    <input type="password" name="password" placeholder="PASSWORD" required><br>
+    <input type="password" name="newpassword" placeholder="PASSWORD" required><br>
     <br>
     <button>GET PIK'IN</button>
   </form><br>

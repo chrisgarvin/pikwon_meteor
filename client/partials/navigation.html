@@ -3,7 +3,7 @@
   {{#if currentUser}}
 <ul>
 <li>
-  <a href="">{{ currentUser.name }}</a>
+  <a href="/profile">{{ user.profile.username.toUpperCase }}</a>
   <span class="primary">|</span>
 </li>
 <li>
@@ -11,12 +11,12 @@
   <span class="primary">|</span>
 </li>
 <li>
-  <a href="">LOG OUT</a>
+  <span class="logout"><a href="">LOG OUT</a></span>
 </li>
 </ul>
   {{ else }}
   <form class="login">
-    <input type="text" name="username" placeholder="USERNAME" required>
+    <input type="email" name="email" placeholder="EMAIL" required>
     <input type="password" name="password" placeholder="PASSWORD" required>
     <button>LOG IN</button>
     <a href="/signup">SIGN-UP</a> <h3 class="primary" style="display:inline;">|</h3>

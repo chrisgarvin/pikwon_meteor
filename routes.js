@@ -16,3 +16,10 @@ Router.route('/signup', {
   tempate: 'signup',
   name: 'signup'
 });
+
+//profile
+
+Router.route('/profile', {
+  tempate: 'profile',
+  name: 'profile'
+});

@@ -199,3 +199,46 @@ header a:hover {
 .profile :-ms-input-placeholder {
    color: white;
 }
+label.error {
+  position: absolute;
+}
+.post_history_container {
+  width: 100%;
+  margin: 0 auto;
+}
+.post_history {
+  margin: 0 auto;
+  width: 32.9%;
+  display: inline-block;
+  text-align: center;
+  font-size: .7vw;
+  color: $secondary_color;
+}
+.profile_options {
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  -webkit-justify-content: center;
+  -webkit-text-align: center;
+  -webkit-flex-wrap: nowrap;
+  -webkit-align-content: center;
+  -webkit-align-items: center;
+  width: 100%;
+  height: 8vh;
+  min-height: 40px;
+  border-radius: 5px;
+  margin: 3px auto;
+  text-align: center;
+  font-size: 2vw;
+  font-weight: bolder;
+  background-color: $primary_color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  padding: 5px 0 5px 0;
+  color: white;
+  letter-spacing: 1.5px;
+}

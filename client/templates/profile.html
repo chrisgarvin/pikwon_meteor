@@ -1,0 +1,58 @@
+<!-- displays current users profile information if signed in   -->
+<template name="profile">
+  {{#if currentUser }}
+<div class="container profile">
+  <h1 class="header">
+    WELL HEY {{user.profile.fname.toUpperCase}}!
+  </h1>
+  <h2>username:
+    {{user.profile.username.toUpperCase}}
+  </h2>
+  <h2>first name:
+    {{user.profile.fname.toUpperCase}}</h2>
+  <h2>last name:
+    {{user.profile.lname.toUpperCase}}</h2>
+  <h2>e-mail:
+    {{email}}</h2>
+  <h2>member since:
+    </h2>
+
+  <a href="/">BACK TO PIK'IN</a>
+  <a href="">EDIT</a>
+  <a href="">DELETE</a>
+</div>
+<div class="post_history_container">
+  {{#each post}}
+
+  <div class="post_history">
+
+    <div class="profile_options">
+      {{ option1.toUpperCase }}
+
+<!-- uses percentage method created in picks_helper to determine percentage of picks -->
+
+      <span class="likes"></span>
+    </div>
+    <div class="profile_options">
+      {{ option2.toUpperCase }}
+
+<!-- uses percentage method created in picks_helper to determine percentage of picks -->
+
+      <span class="likes">
+      </span>
+    </div>
+    POSTED ON:
+  </div>
+
+{{/each}}
+</div>
+
+{{else}}
+
+
+<div class="container profile">
+  <h1 class="header">YOU MUST LOGIN FIRST</h1>
+</div>
+
+{{/if}}
+</template>
